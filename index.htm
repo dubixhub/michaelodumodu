@@ -1,0 +1,736 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Michael N. Odumodu — Product Designer (UI/UX) | Portfolio</title>
+    <meta
+      name="description"
+      content="Michael N. Odumodu is a Product Designer specializing in UI/UX design, creating meaningful digital experiences through thoughtful design and user-centered problem solving."
+    />
+
+    <!-- Remix Icon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        overflow-x: hidden;
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+
+      @keyframes scrollLine {
+        0% {
+          transform: translateY(-100%);
+        }
+        100% {
+          transform: translateY(100%);
+        }
+      }
+
+      @keyframes pulse-ring {
+        0% {
+          transform: scale(1);
+          opacity: 0.2;
+        }
+        50% {
+          transform: scale(1.1);
+          opacity: 0.1;
+        }
+        100% {
+          transform: scale(1.2);
+          opacity: 0;
+        }
+      }
+
+      @keyframes gentleRotate {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .animate-float {
+        animation: float 3s ease-in-out infinite;
+      }
+
+      .animate-scroll-line {
+        animation: scrollLine 2s ease-in-out infinite;
+      }
+
+      .animate-pulse-ring {
+        animation: pulse-ring 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+      }
+
+      .animate-gentle-rotate {
+        animation: gentleRotate 20s linear infinite;
+      }
+
+      .project-card {
+        transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      .project-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+      }
+
+      .project-card img {
+        transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      .project-card:hover img {
+        filter: grayscale(0);
+        transform: scale(1.05);
+      }
+
+      .underline-effect {
+        position: relative;
+        display: inline-block;
+      }
+
+      .underline-bar {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 1px;
+        background-color: black;
+        width: 0;
+        transition: width 0.3s ease;
+      }
+
+      .project-card:hover .underline-bar {
+        width: 100%;
+      }
+
+      .project-card:hover .arrow-icon {
+        transform: translateX(4px);
+      }
+
+      .social-icon {
+        transition: all 0.4s ease;
+      }
+
+      .social-icon:hover {
+        background-color: black;
+        transform: scale(1.1);
+      }
+
+      .social-icon:hover i {
+        color: white;
+      }
+    </style>
+
+ 
+
+<script type="text/javascript">
+    (function () {
+        var options = {
+            whatsapp: " +2348140470777", // WAhatsApp number
+            call_to_action: "Message us", // Call to action
+            position: "right", // Position may be 'right' or 'left'
+        };
+        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>    
+</head>
+
+  </head>
+  <body>
+    <div class="bg-white min-h-screen">
+      <!-- Hero Section -->
+      <section
+        class="relative min-h-screen flex items-center justify-center overflow-hidden bg-white"
+      >
+        <!-- Animated Background -->
+        <div class="absolute inset-0 opacity-5">
+          <div
+            class="absolute inset-0"
+            style="
+              background-image: linear-gradient(
+                  to right,
+                  rgb(0, 0, 0) 1px,
+                  transparent 1px
+                ),
+                linear-gradient(rgb(0, 0, 0) 1px, transparent 1px);
+              background-size: 60px 60px;
+            "
+          ></div>
+          <div
+            class="absolute w-2 h-2 bg-black rounded-full animate-float"
+            style="left: 20%; top: 30%"
+          ></div>
+          <div
+            class="absolute w-2 h-2 bg-black rounded-full animate-float"
+            style="left: 80%; top: 60%; animation-delay: 1s"
+          ></div>
+          <div
+            class="absolute w-2 h-2 bg-black rounded-full animate-float"
+            style="left: 50%; top: 20%; animation-delay: 2s"
+          ></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-12">
+          <div
+            class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center"
+          >
+            <!-- Text Content -->
+            <div class="max-w-4xl">
+              <h1 class="mb-10">
+                <span
+                  class="block text-6xl lg:text-7xl xl:text-8xl font-black tracking-tight text-black"
+                  >MICHAEL</span
+                >
+                <span
+                  class="block text-6xl lg:text-7xl xl:text-8xl font-black tracking-tight text-black"
+                  >N.</span
+                >
+                <span
+                  class="block text-6xl lg:text-7xl xl:text-8xl font-black tracking-tight text-black"
+                  >ODUMODU</span
+                >
+              </h1>
+              <div class="mb-12">
+                <p class="text-2xl lg:text-3xl font-light text-gray-600">
+                  Product Designer (UI/UX)
+                </p>
+              </div>
+              <div class="max-w-2xl">
+                <p class="text-lg lg:text-xl text-gray-700 leading-relaxed">
+                  I craft meaningful digital experiences through thoughtful
+                  design and user-centered problem solving. With a passion for
+                  creating intuitive interfaces and seamless interactions, I
+                  transform complex challenges into elegant solutions that
+                  resonate with users and drive business success.
+                </p>
+              </div>
+            </div>
+
+            <!-- Profile Image -->
+            <div class="flex items-center justify-center lg:justify-end">
+              <div class="relative">
+                <!-- Pulse Rings -->
+                <div class="absolute inset-0 -m-8">
+                  <div
+                    class="absolute inset-0 rounded-full border-2 border-black opacity-20 animate-pulse-ring"
+                  ></div>
+                  <div
+                    class="absolute inset-0 rounded-full border-2 border-black opacity-20 animate-pulse-ring"
+                    style="animation-delay: 1s"
+                  ></div>
+                </div>
+
+                <!-- Image Container -->
+                <div
+                  class="relative w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-black shadow-2xl"
+                >
+                  <img
+                    alt="Michael N. Odumodu"
+                    class="w-full h-full object-cover object-top"
+                    src="/dubix.png"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-500"
+                  ></div>
+                </div>
+
+                <!-- Decorative Elements -->
+                <div
+                  class="absolute -top-4 -right-4 w-20 h-20 flex items-center justify-center"
+                >
+                  <div class="grid grid-cols-3 gap-2">
+                    <div class="w-2 h-2 bg-black rounded-full"></div>
+                    <div class="w-2 h-2 bg-black rounded-full"></div>
+                    <div class="w-2 h-2 bg-black rounded-full"></div>
+                    <div class="w-2 h-2 bg-black rounded-full"></div>
+                    <div class="w-2 h-2 bg-black rounded-full"></div>
+                    <div class="w-2 h-2 bg-black rounded-full"></div>
+                    <div class="w-2 h-2 bg-black rounded-full"></div>
+                    <div class="w-2 h-2 bg-black rounded-full"></div>
+                    <div class="w-2 h-2 bg-black rounded-full"></div>
+                  </div>
+                </div>
+                <div class="absolute -bottom-6 -left-6 w-24 h-1 bg-black"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Page Number -->
+        <div
+          class="absolute bottom-20 right-12 text-9xl font-black text-black opacity-5 select-none"
+        >
+          01
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div
+          class="absolute bottom-12 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2 opacity-40 hover:opacity-100 transition-opacity duration-300 cursor-pointer"
+        >
+          <span class="text-sm tracking-widest text-black">SCROLL</span>
+          <div class="w-px h-16 bg-black relative overflow-hidden">
+            <div class="absolute inset-0 bg-white animate-scroll-line"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="py-32 px-6 lg:px-12 bg-white">
+        <div class="max-w-7xl mx-auto">
+          <!-- Section Header -->
+          <div class="mb-20">
+            <div class="flex items-center gap-8 mb-6">
+              <h2 class="text-6xl lg:text-7xl font-bold text-black">
+                SELECTED WORK
+              </h2>
+              <div class="flex-1 h-0.5 bg-black"></div>
+            </div>
+            <p class="text-lg text-gray-600 font-light">
+              Crafting digital experiences that matter
+            </p>
+          </div>
+
+          <!-- Projects Grid -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+            <!-- Project 1 -->
+            <div
+              class="project-card bg-white rounded-2xl overflow-hidden"
+              style="box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06)"
+            >
+              <div class="relative w-full h-80 overflow-hidden bg-gray-100">
+                <img
+                  alt="E-Commerce Platform Redesign"
+                  class="w-full h-full object-cover object-top"
+                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
+                  style="filter: grayscale(1)"
+                />
+              </div>
+              <div class="p-10">
+                <div class="text-sm font-mono text-gray-400 mb-4">01</div>
+                <h3 class="text-3xl font-bold text-black mb-3">
+                  E-Commerce Platform Redesign
+                </h3>
+                <p class="text-base text-gray-600 leading-relaxed mb-6">
+                  Complete UX overhaul of a multi-vendor marketplace, focusing
+                  on streamlined checkout flows and personalized shopping
+                  experiences that increased conversion rates by 45%.
+                </p>
+                <div class="underline-effect">
+                  <button
+                    class="text-black font-medium flex items-center gap-2"
+                  >
+                    <span>View Case Study</span>
+                    <i
+                      class="ri-arrow-right-line text-xl arrow-icon"
+                      style="transition: transform 0.3s"
+                    ></i>
+                  </button>
+                  <div class="underline-bar"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div
+              class="project-card bg-white rounded-2xl overflow-hidden lg:mt-20"
+              style="box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06)"
+            >
+              <div class="relative w-full h-80 overflow-hidden bg-gray-100">
+                <img
+                  alt="FinTech Mobile Banking App"
+                  class="w-full h-full object-cover object-top"
+                  src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=600&fit=crop"
+                  style="filter: grayscale(1)"
+                />
+              </div>
+              <div class="p-10">
+                <div class="text-sm font-mono text-gray-400 mb-4">02</div>
+                <h3 class="text-3xl font-bold text-black mb-3">
+                  FinTech Mobile Banking App
+                </h3>
+                <p class="text-base text-gray-600 leading-relaxed mb-6">
+                  Designed an intuitive mobile banking experience with advanced
+                  security features, real-time notifications, and seamless money
+                  transfer capabilities for modern users.
+                </p>
+                <div class="underline-effect">
+                  <button
+                    class="text-black font-medium flex items-center gap-2"
+                  >
+                    <span>View Case Study</span>
+                    <i
+                      class="ri-arrow-right-line text-xl arrow-icon"
+                      style="transition: transform 0.3s"
+                    ></i>
+                  </button>
+                  <div class="underline-bar"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div
+              class="project-card bg-white rounded-2xl overflow-hidden"
+              style="box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06)"
+            >
+              <div class="relative w-full h-80 overflow-hidden bg-gray-100">
+                <img
+                  alt="Healthcare Patient Portal"
+                  class="w-full h-full object-cover object-top"
+                  src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=600&fit=crop"
+                  style="filter: grayscale(1)"
+                />
+              </div>
+              <div class="p-10">
+                <div class="text-sm font-mono text-gray-400 mb-4">03</div>
+                <h3 class="text-3xl font-bold text-black mb-3">
+                  Healthcare Patient Portal
+                </h3>
+                <p class="text-base text-gray-600 leading-relaxed mb-6">
+                  Created a comprehensive patient management system that
+                  simplifies appointment scheduling, medical records access, and
+                  doctor-patient communication.
+                </p>
+                <div class="underline-effect">
+                  <button
+                    class="text-black font-medium flex items-center gap-2"
+                  >
+                    <span>View Case Study</span>
+                    <i
+                      class="ri-arrow-right-line text-xl arrow-icon"
+                      style="transition: transform 0.3s"
+                    ></i>
+                  </button>
+                  <div class="underline-bar"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div
+              class="project-card bg-white rounded-2xl overflow-hidden lg:mt-20"
+              style="box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06)"
+            >
+              <div class="relative w-full h-80 overflow-hidden bg-gray-100">
+                <img
+                  alt="SaaS Dashboard Analytics"
+                  class="w-full h-full object-cover object-top"
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop"
+                  style="filter: grayscale(1)"
+                />
+              </div>
+              <div class="p-10">
+                <div class="text-sm font-mono text-gray-400 mb-4">04</div>
+                <h3 class="text-3xl font-bold text-black mb-3">
+                  SaaS Dashboard Analytics
+                </h3>
+                <p class="text-base text-gray-600 leading-relaxed mb-6">
+                  Developed a data-rich analytics platform with customizable
+                  widgets, real-time metrics, and intuitive data visualization
+                  for enterprise clients.
+                </p>
+                <div class="underline-effect">
+                  <button
+                    class="text-black font-medium flex items-center gap-2"
+                  >
+                    <span>View Case Study</span>
+                    <i
+                      class="ri-arrow-right-line text-xl arrow-icon"
+                      style="transition: transform 0.3s"
+                    ></i>
+                  </button>
+                  <div class="underline-bar"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div
+              class="project-card bg-white rounded-2xl overflow-hidden"
+              style="box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06)"
+            >
+              <div class="relative w-full h-80 overflow-hidden bg-gray-100">
+                <img
+                  alt="Social Learning Platform"
+                  class="w-full h-full object-cover object-top"
+                  src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&h=600&fit=crop"
+                  style="filter: grayscale(1)"
+                />
+              </div>
+              <div class="p-10">
+                <div class="text-sm font-mono text-gray-400 mb-4">05</div>
+                <h3 class="text-3xl font-bold text-black mb-3">
+                  Social Learning Platform
+                </h3>
+                <p class="text-base text-gray-600 leading-relaxed mb-6">
+                  Built an engaging educational platform that connects learners
+                  with mentors through interactive courses, live sessions, and
+                  collaborative learning spaces.
+                </p>
+                <div class="underline-effect">
+                  <button
+                    class="text-black font-medium flex items-center gap-2"
+                  >
+                    <span>View Case Study</span>
+                    <i
+                      class="ri-arrow-right-line text-xl arrow-icon"
+                      style="transition: transform 0.3s"
+                    ></i>
+                  </button>
+                  <div class="underline-bar"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div
+              class="project-card bg-white rounded-2xl overflow-hidden lg:mt-20"
+              style="box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06)"
+            >
+              <div class="relative w-full h-80 overflow-hidden bg-gray-100">
+                <img
+                  alt="Travel Booking Experience"
+                  class="w-full h-full object-cover object-top"
+                  src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&h=600&fit=crop"
+                  style="filter: grayscale(1)"
+                />
+              </div>
+              <div class="p-10">
+                <div class="text-sm font-mono text-gray-400 mb-4">06</div>
+                <h3 class="text-3xl font-bold text-black mb-3">
+                  Travel Booking Experience
+                </h3>
+                <p class="text-base text-gray-600 leading-relaxed mb-6">
+                  Reimagined the travel booking journey with smart
+                  recommendations, interactive maps, and seamless
+                  multi-destination planning capabilities.
+                </p>
+                <div class="underline-effect">
+                  <button
+                    class="text-black font-medium flex items-center gap-2"
+                  >
+                    <span>View Case Study</span>
+                    <i
+                      class="ri-arrow-right-line text-xl arrow-icon"
+                      style="transition: transform 0.3s"
+                    ></i>
+                  </button>
+                  <div class="underline-bar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="py-32 px-6 lg:px-12 bg-white">
+        <div class="max-w-7xl mx-auto">
+          <div class="grid grid-cols-1 lg:grid-cols-5 gap-16 lg:gap-20">
+            <!-- Contact Info -->
+            <div class="lg:col-span-3">
+              <div class="inline-block mb-8">
+                <span
+                  class="px-4 py-2 bg-gray-100 text-black text-xs font-medium tracking-wider rounded-full"
+                  >GET IN TOUCH</span
+                >
+              </div>
+              <h2
+                class="text-5xl lg:text-6xl font-bold text-black mb-12 leading-tight"
+              >
+                Let's Create Something<br />Amazing Together
+              </h2>
+
+              <!-- Contact Details -->
+              <div class="space-y-8 mb-12">
+                <div>
+                  <div
+                    class="text-xs uppercase tracking-widest text-gray-500 mb-2"
+                  >
+                    EMAIL
+                  </div>
+                  <a
+                    href="mailto:michael.odumodu@example.com"
+                    class="text-xl font-medium text-black hover:text-gray-600 transition-colors duration-300"
+                  >
+                    michaelodumodu0@gmail.com
+                  </a>
+                </div>
+                <div>
+                  <div
+                    class="text-xs uppercase tracking-widest text-gray-500 mb-2"
+                  >
+                    PHONE
+                  </div>
+                  <a
+                    href="tel:+1234567890"
+                    class="text-xl font-medium text-black hover:text-gray-600 transition-colors duration-300"
+                  >
+                    +234 (814) 047-0777
+                  </a>
+                </div>
+              </div>
+
+              <!-- Social Links -->
+              <div>
+                <div
+                  class="text-xs uppercase tracking-widest text-gray-500 mb-6"
+                >
+                  CONNECT
+                </div>
+                <div class="flex flex-wrap gap-4">
+                  <a
+                    href="https://www.instagram.com/dubixui/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex flex-col items-center gap-2"
+                  >
+                    <div
+                      class="social-icon w-14 h-14 rounded-full border-2 border-black flex items-center justify-center"
+                    >
+                      <i
+                        class="ri-instagram-line text-2xl"
+                        style="color: rgb(0, 0, 0)"
+                      ></i>
+                    </div>
+                    <span class="text-sm text-gray-700">Instagram</span>
+                  </a>
+                 
+                  <a
+                    href="https://www.behance.net/dubixui"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex flex-col items-center gap-2"
+                  >
+                    <div
+                      class="social-icon w-14 h-14 rounded-full border-2 border-black flex items-center justify-center"
+                    >
+                      <i
+                        class="ri-behance-line text-2xl"
+                        style="color: rgb(0, 0, 0)"
+                      ></i>
+                    </div>
+                    <span class="text-sm text-gray-700">Behance</span>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/michael-odumodu/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex flex-col items-center gap-2"
+                  >
+                    <div
+                      class="social-icon w-14 h-14 rounded-full border-2 border-black flex items-center justify-center"
+                    >
+                      <i
+                        class="ri-linkedin-line text-2xl"
+                        style="color: rgb(0, 0, 0)"
+                      ></i>
+                    </div>
+                    <span class="text-sm text-gray-700">LinkedIn</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Decorative SVG -->
+            <div class="lg:col-span-2 flex items-center justify-center">
+              <div class="relative w-full max-w-sm">
+                <svg
+                  viewBox="0 0 300 300"
+                  class="w-full h-auto animate-gentle-rotate"
+                >
+                  <circle
+                    cx="150"
+                    cy="150"
+                    r="120"
+                    fill="none"
+                    stroke="#000"
+                    stroke-width="2"
+                    stroke-dasharray="10 5"
+                  ></circle>
+                  <circle
+                    cx="150"
+                    cy="150"
+                    r="80"
+                    fill="none"
+                    stroke="#000"
+                    stroke-width="1"
+                  ></circle>
+                  <line
+                    x1="150"
+                    y1="30"
+                    x2="150"
+                    y2="270"
+                    stroke="#000"
+                    stroke-width="1"
+                  ></line>
+                  <line
+                    x1="30"
+                    y1="150"
+                    x2="270"
+                    y2="150"
+                    stroke="#000"
+                    stroke-width="1"
+                  ></line>
+                  <circle cx="150" cy="150" r="8" fill="#000"></circle>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="bg-gray-50 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 py-8">
+          <div
+            class="flex flex-col md:flex-row items-center justify-between gap-4"
+          >
+            <p class="text-sm text-gray-600 text-center md:text-left">
+              © 2025 Michael N. Odumodu — Designed & Built by dubixui
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
